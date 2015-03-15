@@ -1,0 +1,25 @@
+<h1>Add a New Subject</h1>
+<p>add an awesome subject</p>
+
+<%= form_for @subject do |s| %>
+	<p>
+		<%= s.label :title %><br />
+		<%= s.text_field :title %><br />
+	</p>
+
+	<p>
+		<%= s.label :description %><br />
+		<%= s.text_area :description %><br />
+	</p>
+	<p>
+		<%= s.label :subject_privacy_id %><br />
+		<%= s.select :subject_privacy_id,  {:public => 0, :private => 1} %><br />
+	
+
+	</p>
+
+	<p>
+		<%= s.submit "Add Subject" %><br />
+
+	</p>
+<% end %>

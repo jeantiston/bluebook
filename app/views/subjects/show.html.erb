@@ -1,0 +1,5 @@
+<h1><%= @subject.title %></h1>
+<p><%= @subject.description %></p>
+<%= link_to "Edit Subject", edit_subject_path %> | 
+<%= link_to "Delete Subject", @subject, :confirm  => "Sure?", :method => :delete %>
+<p>your awesome notes should go here </p>

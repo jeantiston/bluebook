@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
+
+
+  get 'subjects/index'
+
+  get 'subjects/new'
+
+  get 'subjects/edit'
+
+  get 'subjects/show'
+
   get 'home/index'
+
+  	resources :subjects
+	resources :lectures
+	resources :notes
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

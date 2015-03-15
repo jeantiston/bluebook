@@ -1,0 +1,11 @@
+<h1>Subjects</h1>
+<p>Your awesome subjects</p> <br />
+<hr>
+<% @subjects.each do |subj| %>
+	<h3><%= link_to subj.title,subj %></h3>
+	<small><%= subj.created_at %></small>
+	<p><%= subj.description %></p>
+	<hr>
+
+<% end %>
+<%= link_to "Add New Post",new_subject_path %>
